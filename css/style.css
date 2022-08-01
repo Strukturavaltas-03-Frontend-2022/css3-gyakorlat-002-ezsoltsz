@@ -99,8 +99,7 @@ body
 
 /* 9: a menu__hamburger osztályú elemeken belül lévő span elemek 
 before vagy after pszeudo-elemei */
-.menu__hamburger span::before
-.menu__hamburger span::after
+.menu__hamburger span::before, .menu__hamburger span::after
 {
   position: absolute;
   display: block;
@@ -133,8 +132,8 @@ before pszeudo-elemei */
 
 /* 13: a menu__hamburger--htx osztályú elemeken belül lévő span elemek 
 before vagy after pszeudo-elemei */
-.menu__hamburger--htx span::before
-.menu__hamburger--htx span::after
+.menu__hamburger--htx span::before, .menu__hamburger--htx span::after
+
 {
   transition-duration: 0.3s, 0.3s;
   transition-delay: 0.3s, 0s;
@@ -179,8 +178,7 @@ after pszeudo-elemei */
 
 /* 19: a menu__hamburger--htx és az is-active osztályhoz egyszerre tartozó
  elemeken belül lévő span elemek before vagy after pszeudo-elemei */
-.menu__hamburger--htx.is-active span::before
-.menu__hamburger--htx.is-active span::after
+.menu__hamburger--htx.is-active span::before.menu__hamburger--htx.is-active span::after
 {
   transition-delay: 0s, 0.3s;
 }
